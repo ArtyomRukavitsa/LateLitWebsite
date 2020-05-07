@@ -1,0 +1,59 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from flask import Flask, render_template\n\napp = Flask(__name__)\n\n\n@app.route('/')\n@app.route('/index')\ndef index():\n    return render_template('index.html')\n\n\n@app.route('/support')\ndef support():\n    return render_template('support.html')\n\n\n@app.route('/code')\ndef code():\n    return render_template('code.html')\n\n\nif __name__ == '__main__':\n    app.run()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- main.py	(revision 2ab46c5d626349bab6d6ce8466e3a7d33b84da9d)
++++ main.py	(date 1588850470571)
+@@ -20,4 +20,4 @@
+ 
+ 
+ if __name__ == '__main__':
+-    app.run()
+\ No newline at end of file
++    app.run()
+Index: .idea/LateLitWebsite.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\" />\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7 (2)\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n  <component name=\"TestRunnerService\">\n    <option name=\"projectConfiguration\" value=\"pytest\" />\n    <option name=\"PROJECT_TEST_RUNNER\" value=\"pytest\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/LateLitWebsite.iml	(revision 2ab46c5d626349bab6d6ce8466e3a7d33b84da9d)
++++ .idea/LateLitWebsite.iml	(date 1588850426252)
+@@ -2,8 +2,15 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.7 (2)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="TemplatesService">
++    <option name="TEMPLATE_FOLDERS">
++      <list>
++        <option value="$MODULE_DIR$/templates" />
++      </list>
++    </option>
+   </component>
+   <component name="TestRunnerService">
+     <option name="projectConfiguration" value="pytest" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.7 (2)\" project-jdk-type=\"Python SDK\" />\n  <component name=\"PyCharmProfessionalAdvertiser\">\n    <option name=\"shown\" value=\"true\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 2ab46c5d626349bab6d6ce8466e3a7d33b84da9d)
++++ .idea/misc.xml	(date 1588848421057)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (2)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+   <component name="PyCharmProfessionalAdvertiser">
+     <option name="shown" value="true" />
+   </component>
