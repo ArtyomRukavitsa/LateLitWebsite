@@ -14,5 +14,10 @@ def support():
     return render_template('support.html')
 
 
+@app.route('/code')
+def code():
+    return render_template('code.html')
+
+
 if __name__ == '__main__':
     app.run()
