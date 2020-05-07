@@ -4,7 +4,8 @@ body
 }
 h1
 {
-    color: #ffffff
+    color: #ffffff;
+    font-family: "Arial Rounded MT Bold";
 }
 
 h5
